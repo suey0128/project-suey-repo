@@ -1,0 +1,335 @@
+/* font-family: 'Krona One', sans-serif; 
+font-family: 'Montserrat', sans-serif; */
+
+* {
+  box-sizing: border-box; /* the padding is included in the height and width you set */
+  color:#e5b7a8 ;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif; 
+  scroll-behavior: smooth; /* when you click an anchor that lead to other section, it will slide there instead of jumpping there */
+}
+
+.navbar {
+  background: #253f36;
+  height: 100px;
+  display: flex; /* a block */
+  justify-content: center; /* center the whole navbar in the vetical center*/
+  align-items: center; /* center the navbar items in the horizontal center of the box */
+  font-size: 15px;
+  position: sticky; /* it apprears on top even you scroll down*/
+  top: 0px;
+  z-index: 999; /* when sometime is double, the element with bigger number of z-index will appear on top */
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.navHorizontalDisplay {
+  display: flex;
+  justify-content: space-between; /* add space between element (logo and the navbar*/
+  height: 100px;
+  width: 100%; /*make the navbarMenu go to the left (put space between elememts in nacContainer*/
+  max-width: 1300px;
+  z-index: 1;
+  margin: 0px auto; /* normally it is 4 number top right bottom left, but if you enter 2 numbers, they will be top/bottom left/right */
+  padding: 0px 50px;
+}
+
+#topLogoPic { /*set the size of the photo*/
+  height: 40px;
+  width: 40px;
+}
+
+#topLogo { /*the direct container of the topLogoPic */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbarMenu {
+  display: flex;
+  align-items: center;
+  list-style: none; /* without bullet point etc. */
+}
+
+.navbarItem {
+  height: 100px;
+}
+
+.navbarLinks {
+  color: #d4bdb7;
+  display: flex; /* link content display as flex and centered within the height and width */
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  width: 125px;
+  text-decoration: none;
+  height: 100%; /* 80px */
+  transition: all 0.3s ease;
+}
+
+.navbarLinks:hover {
+  color: #ff7d5b;
+  transition: all 0.3s ease; /* the action takes place when hovering */
+}
+
+.navContainer hr {
+  border-top: 2px #e5b7a8;
+  border-radius: 50%; 
+}
+
+
+/* this is the mobile part --------------------------------------------------------------------------*/
+
+/* banner */
+.banner {
+  background: #253f36;
+}
+
+.bannerContainer {
+  display: flex;
+  flex-direction: row; /* the flexible blocks inside the container lies vertically */
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0px auto; /* 0px auto is the value that makes the div center */
+  height: 90%;
+  padding: 100px 30px;
+}
+
+.bannerLeft {
+ width: 40%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#bannerPortrait { 
+  height: 600px;
+  width: auto; 
+}
+
+.bannerRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  text-align: left; /* in the same tag, the text will be align with left */
+  width: 50%;
+  margin-left: 90px;
+}
+
+.bannerHeading {
+  font-size: 50px;
+  margin-bottom: 25px;
+  font-family: 'Krona One', sans-serif; 
+
+}
+
+.bannerDescription {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.bannerButton {
+  background: #ff7d5b;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 25px;
+}
+
+.bannerButton a {
+  color: #253f36;
+  text-decoration: none;
+}
+
+.bannerButton:hover {
+  background: #611d00;
+}
+
+/* Quality Section */
+.quality {
+  background: #e5b7a8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 100px 0px;
+}
+
+.quality h1 {
+  color: #253f36;
+  margin-bottom: 70px;
+  font-family: 'Krona One', sans-serif; 
+}
+
+.qualityCardsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  /* the codes above are making horizontal blocks. 1fr is one block, so horizontally 4 blocks and vetical 1 block*/
+  margin-bottom: 30px;
+}
+
+.qualityCards {
+  margin: 10px; /*the margin between blocks*/
+  height: 425px;
+  width: 300px;
+  border-radius: 30px; /* the curve of the outer box*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(37, 63, 54, 0.5);
+  transition: 0.3s ease-in;
+}
+
+.qualityCards:nth-child(1) {
+  background-image: url("photo-1.JPG") ;
+  background-size: cover;
+}
+
+.qualityCards:nth-child(2) {
+  background-image: url("photo-2.JPG") ;
+  background-size: cover;
+  background-position: center center;
+}
+
+.qualityCards:nth-child(3) {
+  background-image: url("photo-3.JPG") ;
+  background-size: cover;
+}
+
+.qualityCards:nth-child(4) {
+  background-image: url("photo-4.JPG");
+  background-size: cover;
+}
+
+.qualityCards h2 {
+  color: #e5b7a8;
+  text-align: center;
+}
+
+.qualityCardsP {
+  color: #e5b7a8;
+  text-align: center;
+}
+
+.quality hr {
+  border-color: #253f36;
+  width:90%;
+  margin-top: 30px;
+  border-top: 2px;
+}
+
+.qualityWording {
+  color: #253f36;
+  margin-top: 30px;
+  text-align: center;
+  padding: 20px 90px;
+}
+
+.qualityCards:hover {
+  transform:scale(1.075);
+  transition: 0.3s ease-in;
+  background: #629e8f;
+}
+
+
+
+/* pastExperiece section ------------------------------------------------------------------------------------- */
+.pastExperience {
+  background:#253f36;
+}
+
+.pastExperienceContainer {
+  text-align: center;
+  padding: 30px;
+  margin: 0px auto;
+}
+
+.pastExperienceContainer h1 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-family: 'Krona One', sans-serif; 
+}
+
+.pastExperienceContainer p {
+  padding: 50px;
+}
+
+/* Contact section ------------------------------------------------------------------------------------- */
+.contact {
+  background: #e5b7a8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 70px 0px 0px 0px;
+  color: #253f36;
+}
+
+.contact h1 {
+  font-size: 30px;
+  font-family: 'Krona One', sans-serif; 
+  color: #253f36;
+}
+
+.contactInfoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  list-style: none;
+}
+
+.contactInfo {
+  margin: 70px;
+  color: #253f36;
+}
+
+.contactInfo:hover {
+  color:#ff7d5b;
+  cursor: pointer;
+}
+
+
+/* Contact section ------------------------------------------------------------------------------------- */
+.socalMediaWrapper {
+  background: #e5b7a8;
+  color: #253f36;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/*style the social media icons round*/
+.fa {
+  color: #253f36;
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  color:#ff7d5b;
+  transform: scale(1.075);
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}

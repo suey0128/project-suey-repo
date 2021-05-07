@@ -1,12 +1,122 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,800;1,200;1,400;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Suey's Website</title>
   </head>
 
   <body>
-    <h1>Hello World!</h1>
     <script src="script.js"></script> 
+    
+  <!-- navigation section -->
+    <nav class="navbar">
+      <div class="navContainer">
+        <div class="navHorizontalDisplay">
+          <!-- logo on the left -->
+        <a id="topLogo">
+          <img id="topLogoPic" href="#home" src="webprojectLOGO.png" alt="S">
+        </a>
+        <!-- navigation bar list (only for mobile version) -->
+        <div class="navbarToggle" id="mobileMenu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <!-- navigation bar list -->
+        <ul class="navbarMenu">  
+          <li class="navbarItem">
+            <a href="#home" class="navbarLinks" id="homePage">HOME</a>
+          </li>
+          <li class="navbarItem">
+            <a href="#about" class="navbarLinks" id="aboutPage">ABOUT</a>
+          </li>
+          <li class="navbarItem">
+            <a href="#contact" class="navbarLinks" id="contactPage">CONTACT</a>
+          </li>
+        </ul>
+        </div>
+        <!-- the line under the navbar -->
+        <hr>
+      </div>
+    </nav>
+
+    <!-- banner section -->
+    <div class="banner" id="home">
+      <div class="bannerContainer">
+        <!-- banner text one the left -->
+        <div class="bannerLeft">
+          <img id=bannerPortrait src="portraitSmall.jpg" alt="portrait">
+        </div>
+        <!-- banner photo on the right -->
+        <div class="bannerRight">
+          <h1 class="bannerHeading">Hello!<br>I'm Suey</h1>
+          <p class="bannerDescription">Random text...</p>
+          <button class="bannerButton"><a href="#">Read More</a></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- quality section -->
+    <div class="quality" id="quality">
+      <h1>Best Qulities</h1>
+      <div class="qualityCardsContainer">
+        <div class="qualityCards">
+          <h2>Creative</h2>
+          <p class="qualityCardsP" >From experience working in art.</p>
+        </div>
+        <div class="qualityCards">
+          <h2>Organized</h2>
+          <p class="qualityCardsP" >From experience working in art.</p>
+        </div>
+        <div class="qualityCards">
+          <h2>Hard-working</h2>
+          <p class="qualityCardsP" >From experience working in art.</p>
+        </div>
+        <div class="qualityCards">
+          <h2>Great Communicator</h2>
+          <p class="qualityCardsP" >From experience working in art.</p>
+        </div>
+      </div>
+      <hr>
+      <p class="qualityWording">Radom text...So, somewhere that’s easily accessible (ideally your home page or “about” page), you should include a summary—no more than two to three paragraphs long—laying out the most important things about you. This could include major companies you’ve worked for, projects you’ve worked on that you’re most proud of, your “superpower” as a professional, and even a little personality. Imagine people coming to your site and only reading this one section. What would you want them to take away?</p>
+     </div>
+    
+    <!-- past experience -->
+    <div class="pastExperience" id="pastExperience">
+     <div class="pastExperienceContainer">
+      <h1>Education and Work Experience</h1>
+      <p>Radom text...So, somewhere that’s easily accessible (ideally your home page or “about” page), you should include a summary—no more than two to three paragraphs long—laying out the most important things about you. This could include major companies you’ve worked for, projects you’ve worked on that you’re most proud of, your “superpower” as a professional, and even a little personality. Imagine people coming to your site and only reading this one section. What would you want them to take away?</p>
+     </div>
+    </div>
+
+    <!-- contact -->
+    <div class="contact" id="contact">
+      <h1>Contact</h1>
+        <ul class="contactInfoContainer">
+          <li><a href="tel:+16264251696" class="contactInfo">Phone: 626-425-1696</a></li>
+          <li>|</li>
+          <li><a href="mailto:syui0128@gmail.com" class="contactInfo">Email: syui0128@gmail.com </a></li>
+        </ul>
+    </div>
+
+    <!-- social media -->
+    <section class="socialMedia">
+      <div class="socalMediaWrapper">
+        <a href="#" class="fa fa-facebook" target="_blank"></a> <!-- target="_blank" is used when you want the link open on a new tag-->
+        <a href="#" class="fa fa-instagram" target="_blank"></a>
+        <a href="#" class="fa fa-linkedin" target="_blank"></a>
+        <a href="#" class="fa fa-pinterest" target="_blank"></a>
+        <!-- <a href="#" class="socialMediaLinks" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="socialMediaLinks" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="socialMediaLinks" target="_blank"><i class="fab fa-facebook"></i></a> -->
+      </div>
+    </section>
   </body>
 </html> 
